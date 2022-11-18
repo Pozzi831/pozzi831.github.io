@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>История HTML</title>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shorttut icon" href="images/png-icon.png" type="images/png-icon">
+	<script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script>
+$(document).ready(function() { 
+  var button = $('.header'); 
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 400) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+});     
+});
+</script> 
+</head>
+<body>
+	<header>	
+			<div class="header clearfix">	
+		<img src="images/Logo.png" alt="" class="logo">
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Главное меню</a></li>
+                <li><a href="#hestoru">Обзор</a></li>
+             <li><a href="#xarakter">Способы подключения CSS к документу</a></li>
+		    </ul>
+		</nav>
+		</div>
+			<div class="container">
+				
+<div class="header-active">	
+		<img src="images/Logo.png" alt="" class="logo">
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Главное меню</a></li>
+             <li><a href="#hestoru">Обзор</a></li>
+             <li><a href="#xarakter">Способы подключения CSS к документу</a></li>
+		    </ul>
+		</nav>
+		</div>
+			
+		<div class="titles">
+			<div class="titles_first"> HyperText Markup Language</div>
+			<h1>Cascading Style Sheets</h1>
+		</div>
+		
+	</div>
+
+	</header>
+	 <a name="service"></a>
+	<section id="services">
+		<div class="container">
+			<div class="title">
+                <a name="hestoru"></a>
+				<h2>Cascading Style Sheets - 17 декабря 1996 </h2>
+			</div>
+            <p><strong>CSS </strong>( <strong>Cascading Style Sheets</strong> «каскадные таблицы стилей») — формальный язык описания внешнего вида документа (веб-страницы), написанного с использованием языка разметки (чаще всего HTML или XHTML). Также может применяться к любым XML-документам, например, к SVG или XUL..</p>
+			<div class="zoom">
+			<img class="img-left" src="images/pik.png" alt="">
+			</div>
+			<a name="xarakter"></a>
+			<h3>Обзор</h3>
+			<p>
+                CSS используется создателями веб-страниц для задания цветов, шрифтов, стилей, расположения отдельных блоков и других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки CSS является ограждение и отделение описания логической структуры веб-страницы (которое производится с помощью HTML или других языков разметки) от описания внешнего вида этой веб-страницы (которое теперь производится с помощью формального языка CSS). Такое разделение может увеличить доступность документа, предоставить большую гибкость и возможность управления его представлением, а также уменьшить сложность и повторяемость в структурном содержимом.</p>
+			<p>
+				Кроме того, CSS позволяет представлять один и тот же документ в различных стилях или методах вывода, таких как экранное представление, печатное представление, чтение голосом (специальным голосовым браузером или программой чтения с экрана) или при выводе устройствами, использующими шрифт Брайля</p>
+				<p><strong>Итак, система CSS:</strong>
+					<li>формально не зависит от HTML,</li>
+					<li>у неё свой, отличный от HTML, синтаксис,</li>
+					<li>На неё не влияют идеологические ограничения HTML,</li>
+					<li>Она позволяет задавать параметры внешнего представления для любого тега HTML.</li>
+				</p>
+            <a name="razrab"></a>
+            <h3>Способы подключения CSS к документу</h3>
+            <p>
+                Правила CSS могут располагаться как в самом веб-документе, внешний вид которого они описывают, так и во внешних файлах, имеющих расширение .css. Формат CSS — это текстовый файл, в котором содержится перечень правил CSS и комментариев к ним.
+				<p>
+Стили CSS могут быть подключены или внедрены в описываемый ими веб-документ четырьмя способами:
+
+<li>когда описание стилей находится в отдельном файле, оно может быть подключено к документу посредством элемента link, включённого в элемент HEAD :</li>
+</p>
+<p>
+	<xmp><!DOCTYPE html>
+		<html>
+		   <head>
+			  .....
+			 <link rel="stylesheet" type="text/css" href="style.css">
+		   </head>
+		   <body>
+			  .....
+		   </body>
+		</html></xmp>
+</p>
+<li>когда файл стилей размещается отдельно от родительского документа, он может быть подключён к документу инструкцией @import в элементе &lt;style &gt;:</li>
+<p>
+	<xmp><!DOCTYPE html>
+		<html>
+		   <head>
+			  .....
+			  <style media="all">
+				 @import url(style.css);
+			  </style>
+		   </head>
+		</html></xmp>
+	</p>
+<li>когда стили описаны внутри документа, они могут быть включены в элемент &lt;style &gt;, который, включается в элемент &lt;head &gt;:</li>
+<p>
+	<xmp><!DOCTYPE html>
+	<html>
+	   <head>
+		  .....
+		  <style>
+			 body { 
+				color: red;
+			 }
+		  </style>
+	   </head>
+	   <body>
+		  .....
+	   </body>
+	</html></xmp>
+</p>
+
+			</p>
+				<footer id="footer">
+					   <p>Источники</p>
+					   <p><a href="https://ru.wikipedia.org/wiki/HTML#Браузеры">Википедия</a></p>
+					   <p><a href="https://vertex-academy.com/tutorials/ru/html_history/">История развития HTML </a></p>
+					   <p><a href="https://proglib.io/p/10-secret-features-html">10 вещей в HTML</a></p>
+			
+					   
+			
+			
+			
+				</footer>
+
+	<!--<div id="button-up">
+        <i class="fa fa-chevron-up"></i>	
+    </div>-->
+  
+</body>
+</html>
