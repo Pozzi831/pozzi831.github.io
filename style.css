@@ -46,7 +46,7 @@ body{
 a{text-decoration: none;}
 
 header {
-	height: 100vh;
+	height: 60vh;
 	background: url(images/bg.jpg) no-repeat center top / cover;
 }
 
@@ -102,7 +102,7 @@ nav {
 .img-right{
     float: right; 
     margin:0 0 20px 20px; 
-    height:auto; width: 25%;
+    height:auto; 
 }
 .zoom {
 	transition: transform .2s; /* Animation */
@@ -194,7 +194,8 @@ p {
 .title {padding-top: 95px;}
 .title1 {padding-top: 40px;}
 
-.title2{margin-top: 200px;}
+.title2{margin-top: 100px;}
+.title3{margin-top: 600px;}
 
 .title h2, .title2 h2 {
 	text-transform: uppercase;
@@ -231,11 +232,12 @@ p {
 	line-height: 1.55em;
 }
 
+
 .services_item:last-child {float: right;}
 
-.services_item:nth-child(2) {margin-left: 60px;}
+.services_item:nth-child(2) {margin-left: 0px;}
 
-#services {padding-bottom: 140px;}
+#services {padding-bottom: 0px;}
 
 .works {margin-top: 70px;}
 
